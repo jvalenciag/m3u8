@@ -71,7 +71,9 @@ module M3u8
         video: attributes['VIDEO'], audio: attributes['AUDIO'],
         uri: attributes['URI'], subtitles: attributes['SUBTITLES'],
         closed_captions: attributes['CLOSED-CAPTIONS'],
-        name: attributes['NAME'], hdcp_level: attributes['HDCP-LEVEL'] }
+        name: attributes['NAME'], hdcp_level: attributes['HDCP-LEVEL'],
+        progresive_uri: attributes['PROGRESSIVE-URI']
+      }
     end
 
     def parse_average_bandwidth(value)
